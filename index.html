@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <script>
+            class Calculadora{
+                somar(){
+                    var n1 = num1.value
+                    var n2 = num2.value
+                    var soma = parseFloat(n1) + parseFloat(n2)
+                    document.getElementById("s").innerHTML = soma
+                    //alert(soma)
+                }
+                subtrair(){
+                    var sub = num1.value - num2.value
+                    alert(sub)
+                }
+                multiplicar(){
+                    var mult = num1.value * num2.value
+                    alert(mult)
+                }
+                dividir(){
+                    if(num2.value != 0){
+                        var div = num1.value / num2.value
+                        alert(div)
+                    }else{
+                        alert("Digite um numero diferente de 0")
+                    }
+                }
+            }
+
+            var calc = new Calculadora()
+        </script>
+    </head>
+        <Center>
+            <body>
+                <h1>Calculadora do Cassio</h1>
+                <input id="num1" type="number" placeholder="Numero 1"/>
+                <br>
+                <input id="num2" type="number" placeholder="Numero 2"/>
+                <br>
+                <output id="s"type="text">Resultado</output>
+                <br>
+                <button onclick="calc.somar()">somar</button>
+                <br>
+                <button onclick="calc.subtrair()">subtrair</button>
+                <br>
+                <button onclick="calc.multiplicar()">multiplicar</button>
+                <br>
+                <button onclick="calc.dividir()">dividir</button>
+                <br>
+                <button onclick="window.location.href='https://w3docs.com';">GIT</button>
+            </body>
+        </Center>
+</html>
